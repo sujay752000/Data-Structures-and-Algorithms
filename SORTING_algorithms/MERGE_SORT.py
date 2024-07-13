@@ -36,3 +36,7 @@ def merge_Sort(arr, low, high):
         merge_Sort(arr, low, mid)
         merge_Sort(arr, mid + 1, high)
         merge(arr, low, mid, high)
+
+lst = [12, 3, 6, 5, 1, 4]
+merge_Sort(lst, 0, len(lst) - 1)
+print(lst)
