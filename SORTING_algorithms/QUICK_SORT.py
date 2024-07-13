@@ -63,5 +63,5 @@ print(lst)
     _Additionals_
 
     In-place = Yes, its a in-place alogo, beacuse it doesn't uses additional temporary space to sort array
-    Stablity = No, it keeps relative oreder of equal elements in array
+    Stablity = No, it doesn't keeps relative oreder of equal elements in array
 """
