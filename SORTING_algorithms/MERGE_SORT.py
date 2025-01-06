@@ -20,7 +20,6 @@ def merge(arr, low, mid, high):
             temp.append(arr[j])
             j += 1
 
-
     while i <= mid:
         temp.append(arr[i])
         i += 1
@@ -29,11 +28,8 @@ def merge(arr, low, mid, high):
         temp.append(arr[j])
         j += 1
 
-    
     for i in range(0, len(temp)):
         arr[low + i] = temp[i]
-
-
 
 
 def merge_Sort(arr, low, high):
@@ -54,7 +50,9 @@ def merge_Sort(arr, low, high):
         merge_Sort(arr, mid + 1, high)
         merge(arr, low, mid, high)
 
-lst = [12, 3, 6, 5, 1, 4]
+
+# lst = [12, 3, 6, 5, 1, 4]
+lst = [5, 2, 3, 1]
 merge_Sort(lst, 0, len(lst) - 1)
 print(lst)
 
